@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>TITLE</title>
+  <title>Eclipse - free PSD - project.</title>
 
   <link href="css/normalize.css" rel="stylesheet">
   
@@ -19,7 +19,7 @@
   <!--<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">-->
   
   <!--<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">-->
-  <!--<link href="FONT" rel="stylesheet">-->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 
   <!--[if lt IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -27,21 +27,276 @@
 </head>
 
 <body>
-  <header class="header">
+  <header id="header" class="header">
     <div class="container">
-
+      <div class="header-top">
+        <a class="logo logo_header" href="#">
+          <img class="logo__img logo__img_small" src="img/logo" width="" height="" alt="logo">
+        </a>
+        <ul class="header-top__menu">
+          <li class="header-top__li">
+            <a href="#" class="header-top__menu-link header-top__menu-link_active">About</a>
+          </li>
+          <li class="header-top__li">
+            <a href="#" class="header-top__menu-link">Studio</a>
+          </li>
+          <li class="header-top__li">
+            <a href="#" class="header-top__menu-link">Pricing</a>
+          </li>
+          <li class="header-top__li">
+            <a href="#" class="header-top__menu-link">Blog</a>
+          </li>
+          <li class="header-top__li">
+            <a href="#" class="header-top__menu-link header-top__menu-link_join-btn">Join</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header-bottom">
+        <h2 class="slogan">Push yourself & your designs</h2>
+        <p class="slogan-description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Veritatis quibusdam vel molestiae. Quasi quisquam, quas molestiae.
+        </p>
+        <form id="header-form" class="header-bottom__form" method="post">
+          <select form="header-form" class="header-bottom__select">
+            <option class="header-bottom__option">Design Style</option>
+            <option class="header-bottom__option">Design Style2</option>
+            <option class="header-bottom__option">Design Style3</option>
+            <option class="header-bottom__option">Design Style4</option>
+            <option class="header-bottom__option">Design Style5</option>
+          </select>
+          <input class="header-bottom__input_email" type="email" placeholder="Email">
+          <input class="header-bottom__input_submit" type="submit" value="">
+        </form>
+      </div>
+      <a class="contact-us-btn" href="#">Contact Us</a>
+      <a class="scroll-btn scroll-btn_header" href="#latest-design"></a>
     </div>
   </header>
 
-  <main class="main-">
+  <div id="latest-design" class="main__latest-design">
     <div class="container">
-
+      <h3 class="main-block__title main-block__title_latest-design">Latest design style</h3>
+      <p class="main-block__description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Quo placeat dolore libero facilis, dolores reiciendis.
+      </p>
+      <a class="scroll-btn scroll-btn_latest-design" href="#features"></a>
     </div>
-  </main>
+  </div>
+  
+  <div id="features" class="main__features">
+    <div class="container">
+      <h3 class="main-block__title">Features of app</h3>
+      <p class="main-block__description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Quo placeat dolore libero facilis, dolores reiciendis.
+      </p>
+      <div class="features__items">
+        <div class="features__item">
+          <a class="features__item-link" href="#">
+            <img class="features__item-img" src="" width="" height="" alt="">
+          </a>
+          <h4 class="features__item-name">Lorem ipsum dolor sit</h4>
+          <p class="features__item-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Perferendis repellat at temporibus officiis unde mollitia ipsum, 
+            enim, dolores nemo suscipit, necessitatibus assumenda aut incidunt/
+          </p>
+        </div>
+        <div class="features__item">
+          <a class="features__item-link" href="#">
+            <img class="features__item-img" src="" width="" height="" alt="">
+          </a>
+          <h4 class="features__item-name">Lorem ipsum dolor sit</h4>
+          <p class="features__item-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Perferendis repellat at temporibus officiis unde mollitia ipsum, 
+            enim, dolores nemo suscipit, necessitatibus assumenda aut incidunt/
+          </p>
+        </div>
+        <div class="features__item">
+          <a class="features__item-link" href="#">
+            <img class="features__item-img" src="" width="" height="" alt="">
+          </a>
+          <h4 class="features__item-name">Lorem ipsum dolor sit</h4>
+          <p class="features__item-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Perferendis repellat at temporibus officiis unde mollitia ipsum, 
+            enim, dolores nemo suscipit, necessitatibus assumenda aut incidunt/
+          </p>
+        </div>
+        <div class="features__item">
+          <a class="features__item-link" href="#">
+            <img class="features__item-img" src="" width="" height="" alt="">
+          </a>
+          <h4 class="features__item-name">Lorem ipsum dolor sit</h4>
+          <p class="features__item-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Perferendis repellat at temporibus officiis unde mollitia ipsum, 
+            enim, dolores nemo suscipit, necessitatibus assumenda aut incidunt/
+          </p>
+        </div>
+      </div>
+      <a class="scroll-btn" href="#guidlines"></a>
+    </div>
+  </div>
+  
+  <div id="guidlines" class="main__guidlines">
+    <div class="container">
+      <h3 class="main-block__title">Our design guidlines</h3>
+      <p class="main-block__description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Quo placeat dolore libero facilis, dolores reiciendis.
+      </p>
+      <div class="guidlines__slider">
+        <input id="dev" class="guidlines__input" type="radio" name="guidlines" value="guidlines_1">
+        <input id="des" class="guidlines__input" type="radio" name="guidlines" value="guidlines_2" checked>
+        <input id="bus" class="guidlines__input" type="radio" name="guidlines" value="guidlines_3">
+        <input id="art" class="guidlines__input" type="radio" name="guidlines" value="guidlines_4">
+        <div class="guidlines__switches">
+          <label for="dev" class="guidlines__switch">Development</label>
+          <label for="des" class="guidlines__switch">Design</label>
+          <label for="bus" class="guidlines__switch">Business</label>
+          <label for="art" class="guidlines__switch">Arts</label>
+        </div>
+        <div class="guidlines__wrapper">
+          <ul class="guidlines__slide">
+            <li class="guidlines__slide-piece">
+              <a href="#" class="guidlines__slide-piece-link">
+                <img class="guidlines__slide-piece-img" src="" width="" height="" alt="slide piece">
+                Development listing one
+              </a>
+            </li>
+            <li class="guidlines__slide-piece">
+              <a href="#" class="guidlines__slide-piece-link">
+                <img class="guidlines__slide-piece-img" src="" width="" height="" alt="slide piece">
+                Development listing one
+              </a>
+            </li>
+            <li class="guidlines__slide-piece">
+              <a href="#" class="guidlines__slide-piece-link">
+                <img class="guidlines__slide-piece-img" src="" width="" height="" alt="slide piece">
+                Development listing one
+              </a>
+            </li>
+          </ul>
+          <ul class="guidlines__slide">
+            <li class="guidlines__slide-piece">
+              <a href="#" class="guidlines__slide-piece-link">
+                <img class="guidlines__slide-piece-img" src="" width="" height="" alt="slide piece">
+                Design listing one
+              </a>
+            </li>
+            <li class="guidlines__slide-piece">
+              <a href="#" class="guidlines__slide-piece-link">
+                <img class="guidlines__slide-piece-img" src="" width="" height="" alt="slide piece">
+                Design listing one
+              </a>
+            </li>
+            <li class="guidlines__slide-piece">
+              <a href="#" class="guidlines__slide-piece-link">
+                <img class="guidlines__slide-piece-img" src="" width="" height="" alt="slide piece">
+                Design listing one
+              </a>
+            </li>
+          </ul>
+          <ul class="guidlines__slide">
+            <li class="guidlines__slide-piece">
+              <a href="#" class="guidlines__slide-piece-link">
+                <img class="guidlines__slide-piece-img" src="" width="" height="" alt="slide piece">
+                Business listing one
+              </a>
+            </li>
+            <li class="guidlines__slide-piece">
+              <a href="#" class="guidlines__slide-piece-link">
+                <img class="guidlines__slide-piece-img" src="" width="" height="" alt="slide piece">
+                Business listing one
+              </a>
+            </li>
+            <li class="guidlines__slide-piece">
+              <a href="#" class="guidlines__slide-piece-link">
+                <img class="guidlines__slide-piece-img" src="" width="" height="" alt="slide piece">
+                Business listing one
+              </a>
+            </li>
+          </ul>
+          <ul class="guidlines__slide">
+            <li class="guidlines__slide-piece">
+              <a href="#" class="guidlines__slide-piece-link">
+                <img class="guidlines__slide-piece-img" src="" width="" height="" alt="slide piece">
+                Arts listing one
+              </a>
+            </li>
+            <li class="guidlines__slide-piece">
+              <a href="#" class="guidlines__slide-piece-link">
+                <img class="guidlines__slide-piece-img" src="" width="" height="" alt="slide piece">
+                Arts listing one
+              </a>
+            </li>
+            <li class="guidlines__slide-piece">
+              <a href="#" class="guidlines__slide-piece-link">
+                <img class="guidlines__slide-piece-img" src="" width="" height="" alt="slide piece">
+                Arts listing one
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="main__slogan">
+    <div class="container">
+      <a class="logo logo_slogan" href="#">
+        <img class="logo__img logo__img_big" src="img/logo" width="" height="" alt="logo slogan">
+      </a>
+      <h2 class="slogan">Push yourself & your designs</h2>
+      <p class="slogan-description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Veritatis quibusdam vel molestiae. Quasi quisquam, quas molestiae.
+      </p>
+    </div>
+  </div>
 
   <footer class="footer">
+    <a class="scroll-btn_footer" href="#header"></a>
     <div class="container">
-
+      <div class="footer__socials">
+        <a href="#" class="social__btn social__btn_tw">Tweet</a>
+        <a href="#" class="social__btn social__btn_fb">Share</a>
+      </div>
+      <ul class="footer__menu">
+        <li class="footer__li">
+          <a href="#" class="footer__menu-link">About us</a>
+        </li>
+        <li class="footer__li">
+          <a href="#" class="footer__menu-link">Support</a>
+        </li>
+        <li class="footer__li">
+          <a href="#" class="footer__menu-link">Why buy</a>
+        </li>
+        <li class="footer__li">
+          <a href="#" class="footer__menu-link">Affilates</a>
+        </li>
+        <li class="footer__li">
+          <a href="#" class="footer__menu-link">Contact us</a>
+        </li>
+        <li class="footer__li">
+          <a href="#" class="footer__menu-link">Returns</a>
+        </li>
+      </ul>
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Copyright ©2016. Cool stuf here
+        </p>
+      </div>
+      <div class="footer__etc">
+        <p class="footer__etc-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        </p>
+      </div>
     </div>
   </footer>
 
