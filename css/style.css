@@ -1,4 +1,4 @@
-/*
+
 /@font-face {
   font-family: 'FiraSans-Bold';
   src: url('../fonts/FiraSans-Bold/FiraSans-Bold.eot');
@@ -9,7 +9,7 @@
   font-weight: normal;
   font-style: normal;
 }
-*/
+
 @font-face {
   font-family: 'Gotham-Medium';
   src: url('../fonts/Gotham Medium/Gotham-Medium.eot');
@@ -136,8 +136,13 @@ ul {
   color: #fff;
 }
 
+.header-top__menu-link_join-btn {
+  font: 1.6em/1.75em "Gotham-Bold", Arial, sans-serif;/*16/28*/
+  color: #fff;
+}
+
 .header-bottom__form {
-  font: 1.395em/1.51em "Montserrat", Arial, sans-serif;/*13.95/21*/
+  font: 1.4em/1.5em "Montserrat-Regular", Arial, sans-serif;/*14/21*/
   color: rgba(51, 51, 51, 0.9);
 }
 
@@ -157,16 +162,61 @@ ul {
 
 /* MAIN ---------------------------------------------- */
 .main-block__title {
-  font: 3em/0.97em "Montserrat-Bold", Arial, sans-serif;/*30/29*/
+  font: 4em/0.725em "Montserrat-Bold", Arial, sans-serif;/*40/29*/
   text-transform: uppercase;
   color: #333b42;
 }
 
+.main-block__description,
+.features__item-description {
+  font: 1.4em/1.7857142857em "Gotham-Medium", Arial, sans-serif;/*14/25*/
+  color: #74797e;
+}
 
 /* LATEST-DESIGN --------------- */
 .main-block__title_latest-design {
   font-size: 4.em;/*40*/
   line-height: 0.72em;/*29*/
+}
+
+/* FEATURES -------------------- */
+.features__item-name {
+  font: 1.7em/1.7058823529em "Gotham-Bold", Arial, sans-serif;/*17/29*/
+  text-transform: uppercase;
+  color: #333b42;
+}
+
+/* GUIDLINES --------------------- */
+.guidlines__switch {
+  font: 1.4em/2.0714285714em "Gotham-Bold", Arial, sans-serif;/*14/29*/
+  text-transform: uppercase;
+  color: #28c8c6;
+}
+
+.guidlines__slide-piece-link {
+  font: 1.4em/1.7857142857em "Montserrat-Regular", Arial, sans-serif;/*14/25*/
+  color: #333b42;
+}
+
+/* FOOTER ------------------------- */
+.social__btn {
+  font: 1.3em/2.6923076923em "FiraSans-Bold", Arial, sans-serif;/*13/35*/
+  color: #fff;
+}
+
+.footer__menu-link,
+.footer__copyright-text,
+.footer__etc-text {
+  font: 1.2em/2.9166666667em "Montserrat-Regular", Arial, sans-serif;/*12/35*/
+  color: #8297a7;
+}
+
+.footer__copyright-text {
+  line-height: 1.3333333333em;
+}
+
+.footer__etc-text {
+  line-height: 2em;
 }
 
 /* Media-queries-desktops/tablets */
