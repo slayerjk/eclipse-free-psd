@@ -92,6 +92,7 @@ ul {
 }
 
 .container {
+  position: relative;
   width: 1180px;
   margin: 0 auto;
 }
@@ -102,7 +103,7 @@ ul {
 
 .slogan {
   margin-bottom: 30px;
-  font: 6em/0.92em "Montserrat-Bold", Arial, sans-serif;
+  font: 6em/0.92em "Montserrat-Bold", Arial, sans-serif;/*check*/
   /*60/55*/
   text-transform: uppercase;
   color: #fff;
@@ -114,12 +115,34 @@ ul {
   color: #fff;
 }
 
+.scroll-btn {
+  position: absolute;
+  bottom: 0;
+  left: 45.2%;
+  width: 114px;
+  height: 114px;
+  border-radius: 50%;
+  background-color: #fff;
+  outline: 1px solid red;
+}
+
+.scroll-btn::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 33px;
+  height: 33px;
+  background: url('../img/sprite-arrows.png') no-repeat;
+  transform: translate(-50%, -50%);
+  content: "";
+}
+
 
 /* HEADER --------------------------------- */
 
 .header {
   padding-top: 74px;
-  padding-bottom: 120px;
+  padding-bottom: 259px;
   background: #a100ff url('../img/header__bg.png') no-repeat center;
   background-size: cover;
 }
@@ -181,7 +204,7 @@ ul {
   padding-bottom: 10px;
   padding-left: 38px;
   background-color: #a100ff;
-  border-radius: 7px;
+  border-radius: 5px;
   outline: 1px solid red;
 }
 
@@ -204,7 +227,7 @@ ul {
 }
 
 .slogan-description_header {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .header-bottom__form {
@@ -234,36 +257,100 @@ ul {
 .header-bottom__input_email,
 .header-bottom__input_submit {
   padding: 20px;
+  padding-bottom: 24px;
+  padding-left: 25px;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 3px;
   outline: none;
 }
 
 .header-bottom__select,
-.header-bottom__input_email {
-  width: 244px;
-}
-
-.header-bottom__select {
+.header-bottom__input_email,
+.header-bottom__input_submit {
+  margin-right: 15px;
   -webkit-appearance: none;
   /* for FF */
   -moz-appearance: none;
   /* for IE */
   -ms-appearance: none;
   appearance: none;
-  width: 250px;
+  border: none;
+  outline: 0;
+}
+
+.header-bottom__select {
+  width: 280px;
 }
 
 .header-form__select-icon {
   position: absolute;
   top: 23px;
-  left: 200px;
+  left: 238px;
   width: 21px;
   height: 21px;
   background: url('../img/sprite-arrows.png') no-repeat;
   background-position: 0 0;
 }
 
+.header-bottom__input_email {
+  width: 220px;
+}
+
+.header-form__email-icon {
+  position: absolute;
+  top: 23px;
+  left: 531px;
+  width: 13px;
+  height: 15px;
+  background: url('../img/sprite-arrows.png') no-repeat;
+  background-position: -120px 0;  
+}
+
+.header-bottom__input_submit {
+  position: absolute;
+  top: 0;
+  left: 582px;
+  width: 63px;
+  background-color: #28c6c4;
+  cursor: pointer;
+}
+
+.header-form__submit-icon {
+  position: absolute;
+  top: 23px;
+  left: 608px;
+  width: 16px;
+  height: 16px;
+  background: url('../img/sprite-arrows.png') no-repeat;
+  background-position: -133px 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.contact-us-btn {
+  position: absolute;
+  bottom: -288px;
+  right: -274px;
+  width: 185px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: block;
+  font: 1.4em/2.07em "Gotham-Bold", Arial, sans-serif;/*check*/
+  text-align: center;
+  color: #fff;
+  background-color: #a100ff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transform: rotate(-90deg);
+}
+
+.scroll-btn_header {
+  bottom: -322px;
+}
+
+.scroll-btn_header::after {
+  background-position: -21px 0; 
+}
 
 /* MAIN ---------------------------------------------- */
 
@@ -284,25 +371,134 @@ ul {
 
 /* LATEST-DESIGN --------------- */
 
-.main-block__title_latest-design {
-  font-size: 4.em;
-  /*40*/
-  line-height: 0.72em;
-  /*29*/
+.main__latest-design {
+  padding-top: 121px;
+  padding-bottom: 305px;
+  text-align: center;
+  background: #ebeff3 url('../img/latest-design-iPhone%206.png') no-repeat center -50px;
 }
 
+.main-block__title_latest-design {
+  margin-bottom: 38px;
+  font: ;/*check*/
+  font-size: 4.em;/*40*/
+  line-height: 0.72em;/*29*/
+}
 
+.scroll-btn_latest-design {
+  bottom: -358px;
+  background-color: #28c8c6;
+}
+
+.scroll-btn_latest-design::after {
+  top: 55%;
+  background-position: -87px -1px;
+}
 /* FEATURES -------------------- */
+.main__features {
+  padding-top: 161px;
+  padding-bottom: 92px;
+  text-align: center;
+  border-bottom: 1px solid #d8e0e8;
+}
+
+.main-block__title_features {
+  margin-bottom: 26px;
+  font-size: 3em;
+}
+
+.main-block__description_features {
+  margin-bottom: 55px;
+}
+
+.features__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.features__item {
+  position: relative;
+  width: 280px;
+  
+  padding-top: 170px;
+  text-align: center;
+  outline: 1px solid red;
+}
+
+.features__item-link {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  width: 139px;
+  height: 139px;
+  border-radius: 50%;
+  background-color: #a100ff;
+  transform: translate(-50%, 0%);
+  outline: 1px solid red;
+}
+
+.features__item-link::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: url('../img/feature__item-images-sprite.png') no-repeat;
+  transform: translate(-50%, -50%);
+  content: "";
+}
+
+.features__item-link_1::after {
+  width: 50px;
+  height: 40px;
+  background-position: -42px 0;
+}
+
+.features__item-link_2::after {
+  width: 38px;
+  height: 38px;
+  background-position: -92px 0;
+}
+
+.features__item-link_3::after {
+  width: 42px;
+  height: 42px;
+  background-position: 0 0;
+}
+
+.features__item-link_4::after {
+  width: 55px;
+  height: 48px;
+  background-position: -130px 0;
+}
 
 .features__item-name {
+  margin-bottom: 20px;
   font: 1.7em/1.7058823529em "Gotham-Bold", Arial, sans-serif;
   /*17/29*/
   text-transform: uppercase;
   color: #333b42;
 }
 
+.scroll-btn_features {
+  bottom: -150px;
+  border-bottom: 1px solid #d8e0e8;
+}
 
+.scroll-btn_features::after {
+  background-position: -54px 0;
+}
 /* GUIDLINES --------------------- */
+.main__guidlines {
+  padding-top: 140px;
+  text-align: center;
+}
+
+.main-block__title_guidlines {
+  margin-bottom: 26px;
+  font-size: 3em;
+}
 
 .guidlines__switch {
   font: 1.4em/2.0714285714em "Gotham-Bold", Arial, sans-serif;
@@ -314,6 +510,7 @@ ul {
 .guidlines__slide-piece-link {
   font: 1.4em/1.7857142857em "Montserrat-Regular", Arial, sans-serif;
   /*14/25*/
+  text-transform: uppercase;
   color: #333b42;
 }
 
@@ -321,9 +518,10 @@ ul {
 /* FOOTER ------------------------- */
 
 .social__btn {
-  font: 1.3em/2.6923076923em "FiraSans-Bold", Arial, sans-serif;
+  font: 1.3em/2.6923076923em "FiraSans-Bold", Arial, sans-serif;/*check*/
   /*13/35*/
-  color: #fff;
+  /*color: #fff;*/
+  color: #000;
 }
 
 .footer__menu-link,
