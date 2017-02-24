@@ -103,7 +103,7 @@ ul {
 
 .slogan {
   margin-bottom: 30px;
-  font: 6em/0.92em "Montserrat-Bold", Arial, sans-serif;/*check*/
+  font: 6em/0.92em "Montserrat-Bold", Arial, sans-serif;
   /*60/55*/
   text-transform: uppercase;
   color: #fff;
@@ -335,7 +335,7 @@ ul {
   padding-top: 15px;
   padding-bottom: 15px;
   display: block;
-  font: 1.4em/2.07em "Gotham-Bold", Arial, sans-serif;/*check*/
+  font: 1.6em/1.75em "Gotham-Bold", Arial, sans-serif;/*16/28*/
   text-align: center;
   color: #fff;
   background-color: #a100ff;
@@ -355,8 +355,7 @@ ul {
 /* MAIN ---------------------------------------------- */
 
 .main-block__title {
-  font: 4em/0.725em "Montserrat-Bold", Arial, sans-serif;
-  /*40/29*/
+  font: 3em/9.6666666667em "Montserrat-Bold", Arial, sans-serif;/*30/29*/
   text-transform: uppercase;
   color: #333b42;
 }
@@ -380,9 +379,9 @@ ul {
 
 .main-block__title_latest-design {
   margin-bottom: 38px;
-  font: ;/*check*/
-  font-size: 4.em;/*40*/
-  line-height: 0.72em;/*29*/
+  font: 4em/0.725em "Gotham-Bold", Arial, sans-serif;/*40/29*/
+  text-transform: uppercase;
+  color: #333b42;
 }
 
 .scroll-btn_latest-design {
@@ -404,7 +403,6 @@ ul {
 
 .main-block__title_features {
   margin-bottom: 26px;
-  font-size: 3em;
 }
 
 .main-block__description_features {
@@ -491,31 +489,76 @@ ul {
 }
 /* GUIDLINES --------------------- */
 .main__guidlines {
-  padding-top: 140px;
+  padding-top: 127px;
+  padding-bottom: 93px;
   text-align: center;
 }
 
-.main-block__title_guidlines {
-  margin-bottom: 26px;
-  font-size: 3em;
+.guidlines__switches {
+  width: 567px;
+  outline: 1px solid red;
 }
 
 .guidlines__switch {
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font: 1.4em/2.0714285714em "Gotham-Bold", Arial, sans-serif;
   /*14/29*/
   text-transform: uppercase;
   color: #28c8c6;
 }
 
+.guidlines__input {
+  display: none;
+}
+
+.guidlines__slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
 .guidlines__slide-piece-link {
+  display: inline-block;
+  width: 380px;
+  height: 276px;
   font: 1.4em/1.7857142857em "Montserrat-Regular", Arial, sans-serif;
   /*14/25*/
   text-transform: uppercase;
   color: #333b42;
+  background-color: #fff;
+  outline: 1px solid red;
 }
 
+/* MAIN-Slogan --------------------- */
+
+.main__slogan {
+  padding-top: 316px;
+  padding-bottom: 312px;
+  background: #a100ff url('../img/main-slogan__bg.png') no-repeat center;
+  background-size: cover;
+}
 
 /* FOOTER ------------------------- */
+
+.footer {
+  position: relative;
+  padding-top: 692px;
+  padding-bottom: 148px;
+}
+
+.scroll-btn_footer {
+  position: absolute;
+  top: 231px;
+  left: 0px;
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+  background-color: #919191;
+}
 
 .social__btn {
   font: 1.3em/2.6923076923em "FiraSans-Bold", Arial, sans-serif;/*check*/
