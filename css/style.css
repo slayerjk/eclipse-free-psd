@@ -123,7 +123,7 @@ ul {
   height: 114px;
   border-radius: 50%;
   background-color: #fff;
-  outline: 1px solid red;
+  transition: transform 0.5s ease;
 }
 
 .scroll-btn::after {
@@ -137,6 +137,13 @@ ul {
   content: "";
 }
 
+.scroll-btn:hover { 
+  transform: scale(1.1);
+}
+
+.scroll-btn:active { 
+  opacity: 0.7; 
+}
 
 /* HEADER --------------------------------- */
 
@@ -150,7 +157,6 @@ ul {
 .header-top {
   width: 100%;
   margin-bottom: 183px;
-  outline: 1px solid red;
 }
 
 .logo__header {
@@ -178,7 +184,6 @@ ul {
   /*14/29*/
   text-transform: uppercase;
   color: #fff;
-  outline: 1px solid red;
 }
 
 .header-top__li:nth-of-type(4) .header-top__menu-link,
@@ -187,9 +192,13 @@ ul {
   margin-left: 1px;
 }
 
- .header-top__menu-link_active,
+.header-top__menu-link_active,
 .header-top__menu-link:hover {
   border-bottom: 3px solid #28c6c4;
+}
+
+.header-top__menu-link:active {
+  opacity: 0.7;
 }
 
 .header-top__menu-link_join-btn {
@@ -205,7 +214,6 @@ ul {
   padding-left: 38px;
   background-color: #a100ff;
   border-radius: 5px;
-  outline: 1px solid red;
 }
 
 .header-top__menu-span {
@@ -257,7 +265,8 @@ ul {
 .header-bottom__input_email,
 .header-bottom__input_submit {
   padding: 20px;
-  padding-bottom: 24px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   padding-left: 25px;
   background-color: #fff;
   border-radius: 3px;
@@ -280,16 +289,18 @@ ul {
 
 .header-bottom__select {
   width: 280px;
+  cursor: pointer;
 }
 
 .header-form__select-icon {
   position: absolute;
-  top: 23px;
+  top: 22px;
   left: 238px;
   width: 21px;
   height: 21px;
   background: url('../img/sprite-arrows.png') no-repeat;
   background-position: 0 0;
+  opacity: 0.9;
 }
 
 .header-bottom__input_email {
@@ -299,11 +310,17 @@ ul {
 .header-form__email-icon {
   position: absolute;
   top: 23px;
-  left: 531px;
+  left: 533px;
   width: 13px;
   height: 15px;
   background: url('../img/sprite-arrows.png') no-repeat;
   background-position: -120px 0;  
+}
+
+.header-bottom__select:hover ,
+.header-bottom__input_email:hover,
+.header-bottom__input_email:focus {
+  box-shadow: inset 0 0 2px 2px #28c8c6;
 }
 
 .header-bottom__input_submit {
@@ -318,7 +335,7 @@ ul {
 .header-form__submit-icon {
   position: absolute;
   top: 23px;
-  left: 608px;
+  left: 607px;
   width: 16px;
   height: 16px;
   background: url('../img/sprite-arrows.png') no-repeat;
@@ -344,8 +361,27 @@ ul {
   transform: rotate(-90deg);
 }
 
+.header-top__menu-link_join-btn,
+.header-bottom__input_submit,
+.contact-us-btn {
+  transition: box-shadow 0.3s ease; 
+}
+
+.header-top__menu-link_join-btn:hover,
+.header-bottom__input_submit:hover,
+.contact-us-btn:hover {
+  box-shadow: 0 0 2px 2px #28c6c4;
+}
+
+.header-top__menu-link_join-btn:active,
+.header-bottom__input_submit:active,
+.contact-us-btn:active {
+  opacity: 0.7;
+}
+
 .scroll-btn_header {
   bottom: -322px;
+  background-color: #ebeff3;
 }
 
 .scroll-btn_header::after {
@@ -419,10 +455,8 @@ ul {
 .features__item {
   position: relative;
   width: 280px;
-  
   padding-top: 170px;
   text-align: center;
-  outline: 1px solid red;
 }
 
 .features__item-link {
@@ -435,7 +469,7 @@ ul {
   border-radius: 50%;
   background-color: #a100ff;
   transform: translate(-50%, 0%);
-  outline: 1px solid red;
+  transition: all 0.3s ease;
 }
 
 .features__item-link::after {
@@ -469,6 +503,10 @@ ul {
   width: 55px;
   height: 48px;
   background-position: -130px 0;
+}
+
+.features__item-link:hover {
+  box-shadow: 0 0 2px 2px #a100ff;
 }
 
 .features__item-name {
@@ -518,15 +556,22 @@ ul {
 
 .guidlines__switch {
   display: inline-block;
+  margin-right: -3px;
   padding-top: 13px;
   padding-bottom: 13px;
   font: 1.4em/2.0714285714em "Gotham-Bold", Arial, sans-serif;
   /*14/29*/
   text-align: center;
   text-transform: uppercase;
+  background-color: #fff;
   border: 2px solid #28c8c6;
   color: #28c8c6;
   cursor: pointer;
+}
+
+.normal__switch {
+  background-color: #fff;
+  color: #28c8c6;
 }
 
 .guidlines__switch:first-of-type {
@@ -561,7 +606,8 @@ ul {
 #dev:checked ~ .guidlines__switches > label[for="dev"],
 #des:checked ~ .guidlines__switches > label[for="des"],
 #bus:checked ~ .guidlines__switches > label[for="bus"],
-#art:checked ~ .guidlines__switches > label[for="art"] {
+#art:checked ~ .guidlines__switches > label[for="art"],
+.active-switch {
   color: #fff;
   background-color: #28c8c6;
 }
@@ -633,11 +679,6 @@ ul {
   display: inline-block;
   margin-right: 40px;
   padding-top: 20px;
-  outline: 1px solid red;
-}
-
-.slogan_main {
-  outline: 1px solid red;
 }
 
 /* FOOTER ------------------------- */
@@ -675,13 +716,20 @@ ul {
   content: "";
 }
 
+.scroll-btn_footer:hover {
+  box-shadow: 0 0 1px 1px #919191;
+}
+
+.scroll-btn_footer:active {
+  opacity: 0.5;
+}
+
 .footer__decor {
   position: absolute;
   top: -1218px;
   right: -15px;
   width: 911px;
   height: 983px;
-  outline: 1px solid red;
 }
 
 .footer__decor::before {
@@ -708,7 +756,6 @@ ul {
   float: right;
   width: 100%;
   margin-bottom: 36px;
-  outline: 1px solid red;
 }
 
 .footer__socials-wrapper {
@@ -760,10 +807,17 @@ ul {
   background-position: -5px -5px;
 }
 
+.social__btn:hover {
+  opacity: 0.7;  
+}
+
+.social__btn:active {
+  opacity: 0.5;  
+}
+
 .footer__info-wrapper {
   width: 100%;
   margin-bottom: 25px;
-  outline: 1px solid red;
 }
 
 .footer__menu { 
@@ -771,7 +825,6 @@ ul {
   height: 140px;
   columns: 80px auto;
   column-gap: 55px;
-  outline: 1px solid red;
 }
 
 .footer__copyright {
@@ -789,6 +842,15 @@ ul {
 
 .footer__menu-link {
   text-transform: capitalize;
+}
+
+.footer__menu-link:hover {
+  text-decoration: underline;
+}
+
+.footer__menu-link:active {
+  text-decoration: none;
+  opacity: 0.7;
 }
 
 .footer__copyright-span {
